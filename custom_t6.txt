@@ -1,0 +1,18 @@
+% t2.txt: Incremental testcase for control structures
+_main
+    type int: b2;
+    b2 <--- 0;
+
+    while (b2 < 5)
+        if (b2 < 3)
+        then
+            write(b2);
+        else
+            b2 <--- b2 + 1;
+        endif
+        b2 <--- b2 + 1;
+    endwhile
+
+    return;
+end
+% Hi thhis ciode has ended

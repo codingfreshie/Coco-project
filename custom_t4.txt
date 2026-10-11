@@ -1,0 +1,26 @@
+% t4.txt: Syntactically correct testcase for unions, records, and aliases
+_main
+    definetype union #student as #person
+
+    union #student
+        type int: rollno;
+        type real: cgpa;
+    endunion
+
+    record #taggedstudent
+        type int: tagval;
+        type #person: data;
+    endrecord
+
+    type record #taggedstudent: d2;
+    type int: c4;
+
+    read(c4);
+    
+    d2.tagval <--- 1;
+    d2.data.rollno <--- c4;
+
+    write(d2.data.rollno);
+    
+    return;
+end

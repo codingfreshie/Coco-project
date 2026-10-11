@@ -1,0 +1,11 @@
+% t1.txt: Incremental testcase for basic structures
+_main
+    type int: b2;
+    type real: c3;
+
+    read(b2);
+    c3 <--- 3.14;
+    write(c3);
+
+    return;
+end
